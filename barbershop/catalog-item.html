@@ -37,12 +37,9 @@
     </header>
     
     <!-- те же самые замечания по main и лишним оберткам вобкруг h1 и хлебных крошках -->
-    <main>
       <div class="contaner">
-        <article class="second-navigation clearfix">
           <h1>Набор для путешествий &#171Baxter of california&#187</h1>
-          <nav class="breadcrumbs">
-            <ul>
+            <ul class="breadcrumbs">
               <li>
                 <a href="#">Главная</a>
               </li>
@@ -53,15 +50,13 @@
                 <a href="#">Средства для ухода</a>
               </li>
               <li class="current-page">
-                <a href="#">Набор для путешествий &#171Baxter of california&#187</a>
+                <span>Набор для путешествий &#171Baxter of california&#187</span>
               </li>
             </ul>
-          </nav>
-        </article>
         
         <section class="item">
           <div class="item-pictures">
-            <!-- как у тебя все просто получилось :) -->
+            <!-- как у тебя все просто получилось :) 
             <img src="http://placehold.it/460x498" alt="">
             <img src="http://placehold.it/140x149" alt="">
             <img src="http://placehold.it/140x149" alt="">
@@ -70,6 +65,7 @@
             <figure class="big-image">
               <img class="main-photo" src="img/photo1.png" width="300" height="300" alt="Фото1">
             </figure>
+            <!-- Вопрос: Почему figure идет только для большой картинки, а мелкие обернуты в див? Или это не принципиально? -->
             <div class="small-images">
               <a href="#"><img class="add-photo" src="img/photo2.png" width="150" height="150" alt="Фото2"></a>
               <a href="#"><img class="add-photo" src="img/photo3.png" width="150" height="150" alt="Фото2"></a>
@@ -85,14 +81,13 @@
             </p>
           </div>
           <div class="item-buy">
-            <p>2900 руб</p>
+            <span>2900 руб</span>
             <!-- лишняя обертка для кнопки. тут вообще как и в каталоге ссылка -->
-            <div class="button buy">
-              <input type="submit" name="show" value="купить">
-            </div>
+            <!-- Отв: сменил -->
+            <a class="button-buy" href="#">Купить</a>
           </div>
           <!-- лишняя обертка для h2 b ul они сами по себе блочные и не нуждаются в обертке-->
-          <div class="item-set">
+           <!-- Отв: Эх... люблю я обертки... слишком  -->
             <h2>В набор входят:</h2>
             <ul>
               <li>Средство для умывания (50 мл) </li>
@@ -101,10 +96,8 @@
               <li>Крем после бритья, шампунь (50 мл)</li>
               <li>Удобная кожаная косметичка</li>
             </ul>
-          </div>
         </section>
       </div>
-    </main>
     
     <footer class="main-footer">
       <div class="container clearfix">
