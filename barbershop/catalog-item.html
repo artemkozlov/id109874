@@ -36,6 +36,7 @@
       </div>
     </header>
     
+    <!-- те же самые замечания по main и лишним оберткам вобкруг h1 и хлебных крошках -->
     <main>
       <div class="contaner">
         <article class="second-navigation clearfix">
@@ -60,10 +61,20 @@
         
         <section class="item">
           <div class="item-pictures">
+            <!-- как у тебя все просто получилось :) -->
             <img src="http://placehold.it/460x498" alt="">
             <img src="http://placehold.it/140x149" alt="">
             <img src="http://placehold.it/140x149" alt="">
             <img src="http://placehold.it/140x149" alt="">
+            <!-- вот как тут должно быть -->
+            <figure class="big-image">
+              <img class="main-photo" src="img/photo1.png" width="300" height="300" alt="Фото1">
+            </figure>
+            <div class="small-images">
+              <a href="#"><img class="add-photo" src="img/photo2.png" width="150" height="150" alt="Фото2"></a>
+              <a href="#"><img class="add-photo" src="img/photo3.png" width="150" height="150" alt="Фото2"></a>
+              <a href="#"><img class="add-photo" src="img/photo4.png" width="150" height="150" alt="Фото2"></a>
+            </div>
           </div>
           <div class="item-description">
              <p>
@@ -75,10 +86,12 @@
           </div>
           <div class="item-buy">
             <p>2900 руб</p>
+            <!-- лишняя обертка для кнопки. тут вообще как и в каталоге ссылка -->
             <div class="button buy">
               <input type="submit" name="show" value="купить">
             </div>
           </div>
+          <!-- лишняя обертка для h2 b ul они сами по себе блочные и не нуждаются в обертке-->
           <div class="item-set">
             <h2>В набор входят:</h2>
             <ul>
