@@ -36,10 +36,13 @@
       </div>
     </header>
     
-    <main>
+    <!-- тег мейн убрать у него плохая поддержка и он здесь лишний -->
+    <main> 
       <div class="contaner">
+        <!-- вот эта обертка для заголовка и хлебных крошек лишняя -->
         <article class="second-navigation clearfix">
           <h1>Средства для ухода</h1>
+          <!-- класс крошек переносим на ul а нав убираем -->
           <nav class="breadcrumbs">
             <ul>
               <li>
@@ -49,14 +52,17 @@
                 <a href="#">Магазин</a>
               </li>
               <li class="current-page">
+                <!-- последний элемент крошек не ссылка а просто текст-->
                 <a href="#">Средства для ухода</a>
               </li>
             </ul>
           </nav>
         </article>
-      
+        
+        <!-- тогда уже не section а aside-->
         <section class="left-column">
           <form action="#">
+            <!-- див тут  лишняя обертка -->
             <div class="producer">
               <h2>Производители</h2>
               <input type="checkbox" id="1st-producer" name="Baxter of California" value="Baxter of California" checked>
@@ -72,6 +78,7 @@
               <input type="checkbox" id="6th-producer" name="American Crew" value="American Crew" checked>
               <label for="6th-producer">American Crew</label>
             </div>
+            <!-- и тут див лишняя обертка -->
             <div class="group-goods">
                <h2>Группы товаров:</h2>
               <input type="radio" id="1st-group-goods" name="check-group-goods" value="shaving-goods">
@@ -81,7 +88,9 @@
               <input type="radio" id="3rd-group-goods" name="check-group-goods" value="accessories">
               <label for="3rd-group-goods">Аксесуары</label>
             </div>
+            <!-- и тут тоже див лишняя обертка -->
             <div class="button show">
+              <!-- лучше button type="submit" -->
               <input type="submit" name="show" value="Показать">
             </div>
           </form>
@@ -94,7 +103,8 @@
             &#171Baxter of california&#187</p>
             <div class="item-buy">
               <p>2 900 руб.</p>
-              <div class="button buy">
+              <!-- лишняя обертка для кнопки, а вообще тут ссылка а не кнопка. И мы не используем теги инпут вне тега формы--> 
+              <div class="button buy"> 
                 <input type="submit" name="show" value="купить">
               </div>
               </div>
