@@ -35,15 +35,15 @@
         </div>
       </div>
     </header>
-    
+
     <!-- тег мейн убрать у него плохая поддержка и он здесь лишний -->
-    <!-- Отв: хм.. на вебинаре по разметке говорилось что main уже вполне хорошо поддерживается, ну нет так нет.  --> 
+    <!-- Отв: хм.. на вебинаре по разметке говорилось что main уже вполне хорошо поддерживается, ну нет так нет.  -->
       <div class="container">
-        <!-- вот эта обертка для заголовка и хлебных крошек лишняя -->
-        <!-- Отв: убрал лишнюю обертку-->
+
           <h1>Средства для ухода</h1>
           <!-- класс крошек переносим на ul а нав убираем -->
           <!-- Отв: Убрал nav. Хотя делал по аналогии с хедером, где ul вложен в nav  -->
+          <!-- nav - основная навигация по сайту - хлебные крошки не тянут на эьл  -->
             <ul class="breadcrumbs">
               <li>
                 <a href="#">Главная</a>
@@ -54,15 +54,13 @@
               <li class="current-page">
                 <!-- последний элемент крошек не ссылка а просто текст-->
                 <!-- Отв: нужно обернуть в спан или можно просто текстом оставить? -->
+                <!-- просто тектс -->
                 Средства для ухода
               </li>
             </ul>
-        
-        <!-- тогда уже не section а aside-->
+
         <aside class="left-column">
           <form action="#">
-            <!-- див тут  лишняя обертка -->
-             <!-- Отв: убрал -->
               <h2>Производители</h2>
               <input type="checkbox" id="1st-producer" name="Baxter of California" value="Baxter of California" checked>
               <label for="1st-producer">Baxter of California</label>
@@ -76,23 +74,19 @@
               <label for="5th-producer">Murray&#8217;s</label>
               <input type="checkbox" id="6th-producer" name="American Crew" value="American Crew" checked>
               <label for="6th-producer">American Crew</label>
-            <!-- и тут див лишняя обертка -->
-            <!-- Отв: ок -->
-               <h2>Группы товаров:</h2>
+
+              <h2>Группы товаров:</h2>
               <input type="radio" id="1st-group-goods" name="check-group-goods" value="shaving-goods">
               <label for="1st-group-goods">Бритвенные принадлежности</label>
               <input type="radio" id="2nd-group-goods" name="check-group-goods" value="care-goods" checked>
               <label for="2nd-group-goods">Средства для ухода</label>
               <input type="radio" id="3rd-group-goods" name="check-group-goods" value="accessories">
               <label for="3rd-group-goods">Аксесуары</label>
-            <!-- и тут тоже див лишняя обертка -->
-            <!-- Отв: угу -->
-              <!-- лучше button type="submit" -->
-              <!-- Отв: Почитал про него, учту -->
+
               <button type="submit" name="show">Показать</button>
           </form>
         </aside>
-      
+
         <section class="right-column">
           <article class="goods">
             <img src="http://placehold.it/220x165" alt="">
@@ -100,13 +94,13 @@
             &#171Baxter of california&#187</p>
             <div class="item-buy">
               <!-- Вопрос: Хотя комментариев по этому поводу не было, решил сменить тег у цены с p на span, теперь они с сылкой на одном уровне. Пойдет?  -->
+              <!-- нет тут должне быть p мы потом на css их поставим рядом -->
               <span>2 900 руб.</span>
-              <!-- лишняя обертка для кнопки, а вообще тут ссылка а не кнопка. И мы не используем теги инпут вне тега формы-->
-              <!-- Отв: Исправляю -->
-              <a class="button-buy" href="#">Купить</a> 
+
+              <a class="button-buy" href="#">Купить</a>
             </div>
           </article>
-        
+
           <article class="goods">
             <img src="http://placehold.it/220x165" alt="">
             <p>Увлажняющий кондиционер<br>
@@ -116,7 +110,7 @@
               <a class="button-buy" href="#">Купить</a>
             </div>
           </article>
-        
+
           <article class="goods">
             <img src="http://placehold.it/220x165" alt="">
             <p>Гель для волос<br>
@@ -126,7 +120,7 @@
               <a class="button-buy" href="#">Купить</a>
             </div>
           </article>
-        
+
           <article class="goods">
             <img src="http://placehold.it/220x165" alt="">
             <p>Гель для укладки волос<br>
@@ -136,7 +130,7 @@
               <a class="button-buy" href="#">Купить</a>
             </div>
           </article>
-        
+
           <article class="goods">
             <img src="http://placehold.it/220x165" alt="">
             <p>Гель для волос<br>
@@ -146,7 +140,7 @@
               <a class="button-buy" href="#">Купить</a>
             </div>
           </article>
-        
+
           <article class="goods">
             <img src="http://placehold.it/220x165" alt="">
             <p>Набор для бритья<br>
@@ -157,7 +151,7 @@
             </div>
           </article>
         </section>
-      
+
         <div class="paginator">
           <a href="#">1</a>
           <span>2</span>
@@ -165,7 +159,7 @@
           <a href="#">4</a>
         </div>
       </div>
-    
+
     <footer class="main-footer">
       <div class="container clearfix">
         <section class="footer-contacts">
