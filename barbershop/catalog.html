@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700,400&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -20,7 +22,7 @@
               <a href="#">Новости</a>
             </li>
             <li>
-              <a href="text.html">Прайс-лист</a>
+              <a href="#">Прайс-лист</a>
             </li>
             <li class="active">
               <a href="#">Магазин</a>
@@ -38,131 +40,165 @@
 
       <div class="container">
 
-          <h1>Средства для ухода</h1>
+        <h1>Средства для ухода</h1>
            
-            <ul class="breadcrumbs">
-              <li>
-                <a href="#">Главная</a>
-              </li>
-              <li>
-                <a href="#">Магазин</a>
-              </li>
-              <li class="current-page">
-                Средства для ухода
-              </li>
-            </ul>
+        <ul class="breadcrumbs">
+          <li>
+            <a href="#">Главная</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li class="current-page">
+            Средства для ухода
+          </li>
+        </ul>
 
         <aside class="left-column">
           <form action="#">
-              <h2>Производители</h2>
-              <input type="checkbox" id="1st-producer" name="Baxter of California" value="Baxter of California" checked>
-              <label for="1st-producer">Baxter of California</label>
-              <input type="checkbox" id="2nd-producer" name="Mr Natty" value="Mr Natty">
-              <label for="2nd-producer">Mr Natty</label>
-              <input type="checkbox" id="3rd-producer" name="Suavecito" value="Suavecito" checked >
-              <label for="3rd-producer">Suavecito</label>
-              <input type="checkbox" id="4th-producer"  name="Malin+Goetz" value="Malin+Goetz">
-              <label for="4th-producer">Malin+Goetz</label>
-              <input type="checkbox" id="5th-producer" name="Murray&#8217;s" value="Murray&#8217;s">
-              <label for="5th-producer">Murray&#8217;s</label>
-              <input type="checkbox" id="6th-producer" name="American Crew" value="American Crew" checked>
-              <label for="6th-producer">American Crew</label>
+              <h2 class="form-title">Производители:</h2>
+              <ul>
+                <li>
+                  <input type="checkbox" id="1st-producer" name="Baxter of California" value="Baxter of California" checked>
+                  <label for="1st-producer">Baxter of California</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="2nd-producer" name="Mr Natty" value="Mr Natty">
+                  <label for="2nd-producer">Mr Natty</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="3rd-producer" name="Suavecito" value="Suavecito" checked >
+                  <label for="3rd-producer">Suavecito</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="4th-producer"  name="Malin+Goetz" value="Malin+Goetz">
+                  <label for="4th-producer">Malin+Goetz</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="5th-producer" name="Murray&#8217;s" value="Murray&#8217;s">
+                  <label for="5th-producer">Murray&#8217;s</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="6th-producer" name="American Crew" value="American Crew" checked>
+                  <label for="6th-producer">American Crew</label>
+                </li>
+              </ul>
 
-              <h2>Группы товаров:</h2>
-              <input type="radio" id="1st-group-goods" name="check-group-goods" value="shaving-goods">
-              <label for="1st-group-goods">Бритвенные принадлежности</label>
-              <input type="radio" id="2nd-group-goods" name="check-group-goods" value="care-goods" checked>
-              <label for="2nd-group-goods">Средства для ухода</label>
-              <input type="radio" id="3rd-group-goods" name="check-group-goods" value="accessories">
-              <label for="3rd-group-goods">Аксесуары</label>
+              <h2 class="form-title">Группы товаров:</h2>
+              <ul>
+                <li>
+                  <input type="radio" id="1st-group-goods" name="check-group-goods" value="shaving-goods">
+                  <label for="1st-group-goods">Бритвенные <br> принадлежности</label>
+                </li>
+                <li>  
+                  <input type="radio" id="2nd-group-goods" name="check-group-goods" value="care-goods" checked>
+                  <label for="2nd-group-goods">Средства для ухода</label>
+                </li>
+                <li>
+                  <input type="radio" id="3rd-group-goods" name="check-group-goods" value="accessories">
+                  <label for="3rd-group-goods">Аксесуары</label>
+                </li>
+              </ul>
 
-              <button type="submit" name="show">Показать</button>
+              <button class="btn btn-show" type="submit" name="show">Показать</button>
           </form>
         </aside>
 
         <section class="right-column">
           <article class="goods">
-            <img src="img/photo-1-catalog.jpg" width="220" height="165" alt="Товар">
-            <p>Набор для путешествий<br>
-            &#171Baxter of california&#187</p>
+            <a href="#">
+              <img src="img/photo-1-catalog.jpg" width="220" height="165" alt="Товар">
+              <h1><span>Набор для путешествий</span><br>
+            &#171Baxter of california&#187</h1>
+            </a>
             <div class="item-buy">
-              <p>2 900 руб.</p>
-              <a class="button-buy" href="#">Купить</a>
+              <span>2 900 руб.</span>
+              <a class="btn" href="#">Купить</a>
             </div>
           </article>
 
           <article class="goods">
-            <img src="img/photo-2-catalog.jpg" width="220" height="165" alt="Товар">
-            <p>Увлажняющий кондиционер<br>
-            &#171Baxter of california&#187</p>
+            <a href="#">  
+              <img src="img/photo-2-catalog.jpg" width="220" height="165" alt="Товар">
+              <h1><span>Увлажняющий кондиционер</span><br>
+              &#171Baxter of california&#187</h1>
+            </a>
             <div class="item-buy">
-              <p>750 руб.</p>
-              <a class="button-buy" href="#">Купить</a>
+              <span>750 руб.</span>
+              <a class="btn" href="#">Купить</a>
             </div>
           </article>
 
           <article class="goods">
-            <img src="img/photo-3-catalog.jpg" width="220" height="165" alt="Товар">
-            <p>Гель для волос<br>
-            &#171Suavecito&#187</p>
+            <a href="#">  
+              <img src="img/photo-3-catalog.jpg" width="220" height="165" alt="Товар">
+              <h1><span>Гель для волос</span><br>
+              &#171Suavecito&#187</h1>
+            </a>
             <div class="item-buy">
-              <p>290 руб.</p>
-              <a class="button-buy" href="#">Купить</a>
+              <span>290 руб.</span>
+              <a class="btn" href="#">Купить</a>
             </div>
           </article>
 
           <article class="goods">
-            <img src="img/photo-4-catalog.jpg" width="220" height="165" alt="Товар">
-            <p>Гель для укладки волос<br>
-            &#171American crew&#187</p>
+            <a href="#">
+              <img src="img/photo-4-catalog.jpg" width="220" height="165" alt="Товар">
+              <h1><span>Гель для укладки волос</span><br>
+              &#171American crew&#187</h1>
+            </a>
             <div class="item-buy">
-              <p>500 руб.</p>
-              <a class="button-buy" href="#">Купить</a>
+              <span>500 руб.</span>
+              <a class="btn" href="#">Купить</a>
             </div>
           </article>
 
           <article class="goods">
-            <img src="img/photo-5-catalog.jpg" width="220" height="165" alt="Товар">
-            <p>Гель для волос<br>
-            &#171American crew&#187</p>
+            <a href="#">
+              <img src="img/photo-5-catalog.jpg" width="220" height="165" alt="Товар">
+              <h1><span>Гель для волос</span><br>
+              &#171American crew&#187</h1>
+            </a>
             <div class="item-buy">
-              <p>300 руб.</p>
-              <a class="button-buy" href="#">Купить</a>
+              <span>300 руб.</span>
+              <a class="btn" href="#">Купить</a>
             </div>
           </article>
 
           <article class="goods">
-            <img src="img/photo-6-catalog.jpg" width="220" height="165" alt="Товар">
-            <p>Набор для бритья<br>
-            &#171Baxter of california&#187</p>
+            <a href="#">
+              <img src="img/photo-6-catalog.jpg" width="220" height="165" alt="Товар">
+              <h1><span>Набор для бритья</span><br>
+              &#171Baxter of california&#187</h1>
+            </a>
             <div class="item-buy">
-              <p>3 900 руб.</p>
-              <a class="button-buy" href="#">Купить</a>
+              <span>3 900 руб.</span>
+              <a class="btn" href="#">Купить</a>
             </div>
           </article>
         </section>
 
         <div class="paginator">
-          <a href="#">1</a>
-          <span>2</span>
-          <a href="#">3</a>
-          <a href="#">4</a>
+          <a class="btn" href="#">1</a>
+          <span >2</span>
+          <a class="btn" href="#">3</a>
+          <a class="btn" href="#">4</a>
         </div>
       </div>
 
     <footer class="main-footer">
       <div class="container clearfix">
         <section class="footer-contacts">
-          Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          <p>Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           <a href="#">Как нас найти?</a><br>
-          телефон: +7 (495) 666-02-66
+          телефон: +7 (495) 666-02-66</p>
         </section>
         <section class="footer-social">
           <p>Давайте дружить!</p>
-          <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+          <a href="#" class="social-btn social-btn-vk">VK</a>
+          <a href="#" class="social-btn social-btn-fb">F</a>
+          <a href="#" class="social-btn social-btn-inst">I</a>
         </section>
         <section class="footer-copyright">
           <p>Разработано:</p>

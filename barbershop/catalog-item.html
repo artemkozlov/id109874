@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Страница товара</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700,400&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -20,7 +22,7 @@
               <a href="#">Новости</a>
             </li>
             <li>
-              <a href="text.html">Прайс-лист</a>
+              <a href="#">Прайс-лист</a>
             </li>
             <li class="active">
               <a href="#">Магазин</a>
@@ -36,27 +38,30 @@
       </div>
     </header>
 
-      <div class="contaner">
-          <h1>Набор для путешествий &#171Baxter of california&#187</h1>
-            <ul class="breadcrumbs">
-              <li>
-                <a href="#">Главная</a>
-              </li>
-              <li>
-                <a href="#">Магазин</a>
-              </li>
-              <li>
-                <a href="#">Средства для ухода</a>
-              </li>
-              <li class="current-page">
-                <span>Набор для путешествий &#171Baxter of california&#187</span>
-              </li>
-            </ul>
+      <div class="container">
+          
+        <h1>Набор для путешествий &#171Baxter of california&#187</h1>
+        
+        <ul class="breadcrumbs">
+          <li>
+            <a href="#">Главная</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Средства для ухода</a>
+          </li>
+          <li class="current-page">
+            Набор для путешествий &#171Baxter of california&#187
+          </li>
+        </ul>
 
-        <section class="item">
+        <section class="item clearfix">
           <div class="item-pictures">
             <figure class="big-image">
-              <img class="main-photo" src="img/photo-catalog-item.jpg" width="300" height="300" alt="Фото">
+              <a href=""><img class="main-photo" src="img/photo-catalog-item.jpg" width="460" height="498" alt="Фото">
+              </a>
             </figure>
             <div class="small-images">
               <a href="#"><img class="add-photo" src="img/photo-1-catalog-item.jpg" width="150" height="150" alt="Фото"></a>
@@ -64,42 +69,43 @@
               <a href="#"><img class="add-photo" src="img/photo-3-catalog-item.jpg" width="150" height="150" alt="Фото"></a>
             </div>
           </div>
+          
           <div class="item-description">
-             <p>
-               <span>Есть в наличии</span>
-               <span>Актикул: dexter-ae</span>
+             <p>Есть в наличии <span>Актикул: dexter-ae</span>
               </p>
             <p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
             </p>
           </div>
           <div class="item-buy">
             <span>2900 руб</span>
-            <a class="button-buy" href="#">Купить</a>
+            <a class="btn" href="#">Купить</a>
           </div>
-          <h2>В набор входят:</h2>
-          <ul>
-            <li>Средство для умывания (50 мл) </li>
-            <li>Увлажняющий крем (50 мл)</li>
-            <li>Крем для бритья (50 мл)</li>
-            <li>Крем после бритья, шампунь (50 мл)</li>
-            <li>Удобная кожаная косметичка</li>
-          </ul>
+          <div class="item-set">
+            <h2 class="item-set-title">В набор входят:</h2>
+            <ul>
+              <li>Средство для умывания (50 мл) </li>
+              <li>Увлажняющий крем (50 мл)</li>
+              <li>Крем для бритья (50 мл)</li>
+              <li>Крем после бритья, шампунь (50 мл)</li>
+              <li>Удобная кожаная косметичка</li>
+            </ul>
+          </div>
         </section>
       </div>
 
     <footer class="main-footer">
       <div class="container clearfix">
         <section class="footer-contacts">
-          Барбершоп «Бородинский»<br>
+          <p>Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
           <a href="#">Как нас найти?</a><br>
-          телефон: +7 (495) 666-02-66
+          телефон: +7 (495) 666-02-66</p>
         </section>
         <section class="footer-social">
           <p>Давайте дружить!</p>
-          <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+          <a href="#" class="social-btn social-btn-vk">VK</a>
+          <a href="#" class="social-btn social-btn-fb">F</a>
+          <a href="#" class="social-btn social-btn-inst">I</a>
         </section>
         <section class="footer-copyright">
           <p>Дизайн сайта:</p>
