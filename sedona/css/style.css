@@ -1,6 +1,445 @@
 body {
+  min-width: 768px;
+  max-width: ;
   font-size: 14px;
-  line-height: auto;
+  line-height: 16px;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+
+/*-----  header  -----*/
+
+
+.main-header {
+  width: 100%;
+  height: 565px;
+  background-image: url("img/bg-photo-index.jpg");
+  margin-bottom: 60px;
+}
+
+.main-navigation {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 56px;
+  background: #fff;
+  margin-bottom: 76px;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-navigation li {
+  width: 20%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.main-navigation li:first-child {
+  padding-left: 6%;
+}
+
+.main-navigation li:nth-child(3) {
+  padding-right: 6%;
+}
+
+.main-navigation li:first-child,
+.main-navigation li:nth-child(2) {
+  float: left;
+  text-align: left;
+}
+
+.main-navigation li:last-child,
+.main-navigation li:nth-child(3) {
+  float: right;
+  text-align: right;
+}
+
+.main-navigation a {
+  text-decoration: none;
+}
+
+
+/* не очень понял как мини-логотип центровать правильно */
+
+.mini-logo {
+  position: absolute;
+  left:45%;
+}
+
+
+
+.promo-block {
+  100%;
+}
+
+.promo-block img{
+  display: block;
+  margin: 0 auto;
+}
+
+
+/*===== Главная Контент =====*/
+
+
+.reasons-title {
+  width: 50%;
+  min-height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.reasons-title h2 {
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 35px;
+}
+
+.reason-row {
+  width: 100%;
+  height: 100%;
+  font-size: 0px;
+}
+
+.reason-row-image .reason {
+  background-color: #81b3d2;
+}
+
+.reason-row:last-child {
+  background-color: #eee;
+}
+
+.reason-text {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.reason-row .reason-title {
+  width: 60%;
+  line-height: 25px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.reason-row .reason-number {
+  margin-bottom: 25px;
+}
+
+.reason-row:nth-child(3) {
+  height: 330px;
+}
+
+.reason-row:nth-child(3) h2{
+  margin-top: 160px;
+}
+
+.reason-row:last-child h2{
+  margin-top: 45px;
+}
+
+.reason {
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+  height: 256px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.reason-row-image .reason {
+  float: left;
+}
+
+/* с картинками тоже не все понятно */
+
+.reason-row-image .reason-picture {
+  float: right;
+  width: 67%;
+  height: 256px;
+  margin: 0;
+  padding: 0;
+}
+
+.reason-row-image-invert .reason {
+  float: right;
+}
+
+.reason-row-image-invert .reason-picture {
+  float: left;
+  width: 67%;
+  height: 256px;
+  margin: 0;
+  padding: 0;
+}
+
+.reasons {
+margin-bottom: 50px;
+}
+
+/*===== Поиск гостиницы =====*/
+
+.find {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.find h2 {
+  font-size: 30px;
+  line-height: 34px;
+}
+
+.find p {
+  line-height: 24px;
+  margin-bottom: 80px;
+}
+
+.find a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 24px;
+  background-color: #766357;
+  color: #fff;
+  padding: 30px 140px;
+}
+
+/*===== Карта и поиск =====*/
+
+.map {
+  background-image: url(img/map.jpg);
+  width: 100%;
+  height: 593px;
+}
+
+/* форму потом детально прорисую, пока границы только задал */
+.form {
+  width: 570px;
+  height: 395px;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-bottom: 78px;
+}
+
+
+/*===== footer =====*/
+
+
+.main-footer {
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+}
+
+.main-footer>a {
+  float: left;
+  width: 33%;
+  font-size: 21px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 50px 0;
+}
+
+.main-footer .author {
+  float: right;
+  width: 33%;
+  
+}
+
+.author span,
+.author a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  padding: 40px 0;
+}
+
+.author span {
+  font-style: normal;
+  padding-right: 10px;
+}
+
+.main-footer .social {
+  width: 33%;
+}
+
+
+/*====== Страница отелей =====*/
+
+
+.hotels-header {
+  width: 100%;
+  height: 275px;
+  background-image: url("img/bg-filter.jpg");
+  margin-bottom: ;
+}
+
+
+/* потом проработаю форму более детально */
+
+.hotel-filter {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 220px;
+  top: 55px;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.filter-col h2{
+  font-size: 16px;
+  line-height: 18px;
+ 
+}
+
+.filter-col-left {
+  float: left;
+  width: 20%;
+}
+
+.filter-col-right {
+  float: right;
+  width: 30%;
+}
+
+
+/* блок сортировка */
+
+
+.sort {
+  padding-left: 6%;
+  padding-right: 6%;
+  font-size: 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 27px;
+}
+
+.sort h2,
+.sort span,
+.sort ul {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+
+.sort h2 {
+  font-size: 21px;
+  line-height: 24px;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+.sort span,
+.sort li {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.sort li {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 35px;
+}
+
+.arrow {
+  float: right;
+}
+
+/*===== блоки отелей =====*/
+
+.hotel {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 6%;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: 26px;
+}
+
+.hotel-image {
+  float: left;
+  width: 135px;
+  margin: 0;
+  margin-right: 30px;
+  margin-top: 5px;
+}
+
+.raiting {
+  float:right;
+}
+
+.hotel-content {
+  float: left;
+  width: 300px;
+  font-size: 0;
+}
+
+.hotel-content h1{
+  font-size: 21px;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.hotel-col {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.hotel-col div {
+  margin-bottom: 22px;
+}
+
+.hotel-btn {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 20px 5px 15px;
+  color: #fff;
+}
+
+.hotel-btn-blue {
+  background-color: #81b3d2;
+}
+
+.hotel-btn-brown {
+  background-color: #766357;
+}
+
+
+
+
+
+
+
+
+
