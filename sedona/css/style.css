@@ -80,17 +80,37 @@ body {
 
 .main-navigation a {
   text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.main-navigation a:hover {
+  color: #81b3d2;
+}
+
+.main-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.active a {
+  color: #766357;
+}
+
+.active a:hover {
+  color: #604e43;
+}
+
+.active a:active {
+  color: rgba(118, 99, 87, 0.3);
 }
 
 
-/* не очень понял как мини-логотип центровать правильно */
 
 .mini-logo {
   position: absolute;
-  left:45%;
+  left:50%;
+  margin-left: -69px;
 }
-
-
 
 .promo-block {
   100%;
@@ -263,13 +283,13 @@ margin-bottom: 50px;
   font-size: 21px;
   font-weight: bold;
   text-decoration: none;
+  color: #000;
   padding: 50px 0;
 }
 
 .main-footer .author {
   float: right;
   width: 33%;
-  
 }
 
 .author span,
@@ -280,15 +300,41 @@ margin-bottom: 50px;
   padding: 40px 0;
 }
 
+/* Как сменить цвет иконки?*/
+.author img:hover {
+  background: ;
+  
+}
+
 .author span {
   font-style: normal;
   padding-right: 10px;
 }
 
 .main-footer .social {
+  float: left;
   width: 33%;
+  font-size: 0;
 }
 
+.social-link {
+  display: inline-block;
+  vertical-align: top;
+  width: 47px;
+  height: 47px;
+  font-size: 14px;
+  background: #81b3d2;
+  margin-left: 7px;
+  margin-top: 35px;
+}
+
+.social-link:hover {
+  background: #669ec0;
+}
+
+.social-link:active {
+  background: #5496bd;
+}
 
 /*====== Страница отелей =====*/
 
@@ -296,8 +342,8 @@ margin-bottom: 50px;
 .hotels-header {
   width: 100%;
   height: 275px;
-  background-image: url("img/bg-filter.jpg");
-  margin-bottom: ;
+  background: #08457e url("img/bg-filter.jpg");
+  color: #81b3d2;
 }
 
 
@@ -311,12 +357,7 @@ margin-bottom: 50px;
   top: 55px;
   padding-left: 6%;
   padding-right: 6%;
-}
-
-.filter-col h2{
-  font-size: 16px;
-  line-height: 18px;
- 
+  color: #fff;
 }
 
 .filter-col-left {
@@ -328,6 +369,19 @@ margin-bottom: 50px;
   float: right;
   width: 30%;
 }
+
+.filter-col h2{
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.hotel-filter ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
 
 
 /* блок сортировка */
@@ -369,8 +423,30 @@ margin-bottom: 50px;
   margin-right: 35px;
 }
 
+.sort a {
+  text-decoration: none;
+  border-bottom: 1px dashed #81b3d2;
+  color: rgba(0, 0, 0, 0.3);
+  color: 
+}
+
+.sort a:hover {
+  color: #81b3d2;
+}
+
+.sort a:active {
+  color: #000;
+}
+
+.sort-active a {
+  text-decoration: none;
+  border: none;
+  color: #81b3d2;
+}
+
 .arrow {
   float: right;
+  font-size: 14px;
 }
 
 /*===== блоки отелей =====*/
@@ -402,13 +478,25 @@ margin-bottom: 50px;
   font-size: 0;
 }
 
-.hotel-content h1{
+.hotel-title a{
+  text-decoration: none;
   font-size: 21px;
   line-height: 24px;
   margin-top: 0;
+  color: #000;
+}
+
+.hotel-content h1 {
   margin-bottom: 10px;
 }
 
+.hotel-title a:hover {
+  color: #81b3d2;
+}
+
+.hotel-title a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
 .hotel-col {
   display: inline-block;
   vertical-align: baseline;
@@ -431,11 +519,27 @@ margin-bottom: 50px;
   background-color: #81b3d2;
 }
 
+.hotel-btn-blue:hover {
+  background-color: #669ec0;
+}
+
+.hotel-btn-blue:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .hotel-btn-brown {
   background-color: #766357;
 }
 
+.hotel-btn-brown:hover {
+  background-color: #604e43;
+}
 
+.hotel-btn-brown:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 
 
