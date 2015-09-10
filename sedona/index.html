@@ -21,10 +21,10 @@
               <a href="#">Фото и видео</a>
             </li>
             <li>
-              <a href="#">Гостиницы</a>
+              <a href="#">Карта штата</a>
             </li>
             <li>
-              <a href="#">Карта штата</a>
+              <a href="#">Гостиницы</a>
             </li>
           </ul>
           <a class="mini-logo" href="/index.html"><img src="img/mini-logo.png" width="138" height="70" alt="City of Sedona"></a>
@@ -63,20 +63,23 @@
 
           <!-- блок преймуществ c с картинкой-->
           <div class="reason reason-image reason-image-home">
+            <i class="sprite sprite-icon-home"></i>
             <h2 class="reason-title">Жилье</h2>
             <p class="reason-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
 
           <!-- блок преймуществ c с картинкой-->
           <div class="reason reason-image reason-image-hamburger">
+            <i class="sprite sprite-icon-food"></i>
             <h2 class="reason-title">Еда</h2>
             <p class="reason-text">Всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
           </div>
 
           <!-- блок преймуществ c с картинкой-->
           <div class="reason reason-image reason-image-gift">
+            <i class="sprite sprite-icon-gift"></i>
             <h2 class="reason-title">Сувениры</h2>
-            <p class="reason-text">Не только китайского, но и местного производства.</p>
+            <p class="reason-text">Не только китайского,<br> но и местного производства.</p>
           </div>
 
         </div>
@@ -92,7 +95,7 @@
           <div class="reason">
             <h2 class="reason-title">Там есть <br> мост дьявола</h2>
             <div class="reason-number">№2</div>
-            <p class="reason-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <p class="reason-text">Да, по нему можно пройти! <br> Если конечно вы осмелитесь</p>
           </div>
 
         </div>
@@ -103,7 +106,7 @@
           <div class="reason">
             <h2 class="reason-title">Небольшая <br> площадь</h2>
             <div class="reason-number">№3</div>
-            <p class="reason-text">Все достопримечательности находятся очень близко</p>
+            <p class="reason-text">Все достопримеча-<br>тельности находятся очень близко</p>
           </div>
 
           <!-- блок преймуществ -->
@@ -127,7 +130,7 @@
 
       <div class="find">
         <h2>Заинтересовались?</h2>
-        <p>Укажите предполаганмые даты поездки <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p>Укажите предполагаемые даты поездки <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a href="#" class="find-btn">Поиск гостиницы в Седоне</a>
       </div>
 
@@ -136,29 +139,31 @@
         <!-- форма -->
         <div class="form">
           <form action="" method="">
-            <div class="form-row">
+            <div class="form-row clearfix">
               <label for="data-in">дата заезда:</label>
-              <input type="text" id="data-in">
+              <input type="text" id="data-in" placeholder="24 апреля 2014">
+              <i class="icon-calendar"></i>
             </div>
-            <div class="form-row">
+            <div class="form-row clearfix">
               <label for="data-out">дата выезда:</label>
-              <input type="text" id="data-out">
+              <input type="text" id="data-out" placeholder="4 июля 2014">
+              <i class="icon-calendar"></i>
             </div>
-            <div class="form-row">
+            <div class="form-row clearfix">
               <div class="form-col">
                 <label for="adult">взрослые:</label>
                 <div class="input-group">
-                  <button class="counter conter-minus"><i class="icon-minus"></i></button>
+                  <button class="counter conter-minus" href="#"><i class="icon-minus"></i></button>
                   <input type="number" id="adult" min="1" max="10" step="1" value="2">
-                  <button class="counter conter-plus"><i class="icon-plus"></i></button>
+                  <button class="counter conter-plus" href="#"><i class="icon-plus"></i></button>
                 </div>
               </div>
               <div class="form-col">
                 <label for="children">дети:</label>
                 <div class="input-group">
-                  <button class="counter conter-minus"><i class="icon-minus"></i></button>
+                  <button class="counter conter-minus" href="#"><i class="icon-minus"></i></button>
                   <input type="number" id="children" min="0" max="10" step="1" value="0">
-                  <button class="counter conter-plus"><i class="icon-plus"></i></button>
+                  <button class="counter conter-plus" href="#"><i class="icon-plus"></i></button>
                 </div>
               </div>
             </div>
@@ -178,11 +183,12 @@
 
           <div class="social">
             <a href="#" class="social-link"><i class="icon-twitter"></i></a>
-            <a href="#" class="social-link"><i class="icon-fb"></i></a>
+            <a href="#" class="social-link"><i class="icon-facebook"></i></a>
             <a href="#" class="social-link"><i class="icon-youtube"></i></a>
+            
           </div>
 
-          <address class="author"><span>Website by</span><a href="#"><img src="img/icon-htmlacademy.png"  width="113" height="39" alt="htmlacademy.ru"></a></address>
+          <address class="author"><span>Website by</span><a href="#"><i class="sprite sprite-icon-html"></i></a></address>
 
         </footer>
       </div>

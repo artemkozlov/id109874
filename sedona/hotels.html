@@ -11,7 +11,7 @@
 
     <div class="container">
 
-      <header class="hotels-header">
+      <header class="main-header">
         <nav class="main-navigation clearfix">
           <ul>
             <li>
@@ -20,11 +20,11 @@
             <li class="offset">
               <a href="#">Фото и видео</a>
             </li>
-            <li class="active">
-              <a href="#">Гостиницы</a>
-            </li>
             <li>
               <a href="#">Карта штата</a>
+            </li>
+            <li class="active">
+              <a href="#">Гостиницы</a>
             </li>
           </ul>
           <a class="mini-logo" href="#"><img src="img/mini-logo.png" width="138" height="70" alt="City of Sedona"></a>
@@ -46,7 +46,7 @@
                 <label for="parking">парковка</label>
               </li>
               <li>
-                <input type="checkbox" name="" id="wi-fi">
+                <input type="checkbox" name="" id="wi-fi" disabled>
                 <label for="wi-fi">wi-fi</label>
               </li>
             </ul>
@@ -64,7 +64,7 @@
                 <label for="motel">мотель</label>
               </li>
               <li>
-                <input type="checkbox" name="" id="apartments" checked>
+                <input type="checkbox" name="" id="apartments" checked disabled>
                 <label for="apartments">апартаменты</label>
               </li>
             </ul>
@@ -72,31 +72,43 @@
 
           <div class="filter-col filter-col-right">
             <h2>Стоимость в сутки (р):</h2>
-            <!-- в 6 разделе будет разбираться как такое верстается -->
+            
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+            
 
-            <button type="submit" name="show">Показать</button>
+            <button class="btn-transparent" type="submit" name="show">Показать</button>
           </div>
         </form>
       </div>
 
       <!-- сортировка -->
-      <div class="sort">
+      <div class="sort clearfix">
         <h2>Найдено: 3</h2>
         <span>Сортировка:</span>
         <ul>
           <li class="sort-active">
-            <a href="">по цене</a>
+            <a class="sort-type" href="#">по цене</a>
           </li>
           <li>
-            <a href="">по типу</a>
+            <a class="sort-type" href="#">по типу</a>
           </li>
           <li>
-            <a href="">по рейтингу</a>
+            <a class="sort-type" href="#">по рейтингу</a>
           </li>
         </ul>
         <div class="arrow">
-          <i class="icon-up-dir"></i>
-          <i class="icon-down-dir"></i>
+          <a class="arrow-up" href="#"></a>
+          <a class="arrow-down" href="#" active></a>
         </div>
       </div>
 
@@ -109,12 +121,12 @@
 
         <div class="raiting">
           <div class="raiting-container">
-            <i class="ico-star"></i>
-            <i class="ico-star"></i>
-            <i class="ico-star"></i>
-            <i class="ico-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
           </div>
-          <p>рейтинг:8.5</p>
+          <p>рейтинг: 8,5</p>
         </div>
 
         <div class="hotel-content">
@@ -139,10 +151,10 @@
 
         <div class="raiting">
           <div class="raiting-container">
-            <i class="ico-star"></i>
-            <i class="ico-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
           </div>
-          <p>рейтинг:8.9</p>
+          <p>рейтинг: 8,9</p>
         </div>
 
         <div class="hotel-content">
@@ -167,11 +179,11 @@
 
         <div class="raiting">
           <div class="raiting-container">
-            <i class="ico-star"></i>
-            <i class="ico-star"></i>
-            <i class="ico-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
           </div>
-          <p>рейтинг:9.2</p>
+          <p>рейтинг: 9,2</p>
         </div>
 
         <div class="hotel-content">
@@ -193,13 +205,14 @@
         <a href="#" class="hashtag">#VISITSEDONA</a>
 
         <div class="social">
-          <a href="#" class="social-link"><i class="icon-twitter"></i></a>
-          <a href="#" class="social-link"><i class="icon-fb"></i></a>
-          <a href="#" class="social-link"><i class="icon-youtube"></i></a>
+            <a href="#" class="social-link"><i class="icon-twitter"></i></a>
+            <a href="#" class="social-link"><i class="icon-facebook"></i></a>
+            <a href="#" class="social-link"><i class="icon-youtube"></i></a>
+            
         </div>
 
-        <address class="author"><span>Website by</span><a href="#"><img src="img/icon-htmlacademy.png"  width="113" height="39" alt="htmlacademy.ru"></a></address>
-
+          <address class="author"><span>Website by</span><a href="#"><i class="sprite sprite-icon-html"></i></a></address>
+          
       </footer>
     </div>
   </body>
