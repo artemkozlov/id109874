@@ -174,7 +174,6 @@ body {
 
 .promo-block:after {
   content: "";
-  display: ;
   position: absolute;
   width: 100%;
   height: 57px;
@@ -571,7 +570,7 @@ input[type="number"] {
   background-color: rgba(255, 255, 255, .8);
 }
 
-.main-footer>a {
+.main-footer .hashtag {
   float: left;
   width: 33%;
   font-size: 21px;
@@ -636,6 +635,7 @@ input[type="number"] {
   margin-top: 35px;
   padding: 14px 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .social-link:hover {
@@ -858,7 +858,6 @@ input[type="checkbox"]:checked + label:before {
   text-decoration: none;
   border-bottom: 1px dotted #81b3d2;
   color: rgba(0, 0, 0, 0.3);
-  color:
 }
 
 .sort .sort-type:hover {

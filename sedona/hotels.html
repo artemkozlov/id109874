@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Hotels</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -15,7 +15,7 @@
         <nav class="main-navigation clearfix">
           <ul>
             <li>
-              <a href="#">Информация</a>
+              <a href="index.html">Информация</a>
             </li>
             <li class="offset">
               <a href="#">Фото и видео</a>
@@ -33,20 +33,20 @@
 
       <!-- фильтры -->
       <div class="hotel-filter clearfix">
-        <form action="" method="">
+        <form action="form.php" method="get">
           <div class="filter-col filter-col-left">
             <h2>Инфраструктура:</h2>
             <ul>
               <li>
-                <input type="checkbox" name="" id="pool" checked>
+                <input type="checkbox" name="pool" id="pool" checked>
                 <label for="pool">бассейн</label>
               </li>
               <li>
-                <input type="checkbox" name="" id="parking">
+                <input type="checkbox" name="parking" id="parking">
                 <label for="parking">парковка</label>
               </li>
               <li>
-                <input type="checkbox" name="" id="wi-fi" disabled>
+                <input type="checkbox" name="wi-fi" id="wi-fi" disabled>
                 <label for="wi-fi">wi-fi</label>
               </li>
             </ul>
@@ -56,15 +56,15 @@
             <h2>Тип жилья:</h2>
             <ul>
               <li>
-                <input type="checkbox" name="" id="hotel" checked>
+                <input type="checkbox" name="hotel" id="hotel" checked>
                 <label for="hotel">гостиница</label>
               </li>
               <li>
-                <input type="checkbox" name="" id="motel" checked>
+                <input type="checkbox" name="motel" id="motel" checked>
                 <label for="motel">мотель</label>
               </li>
               <li>
-                <input type="checkbox" name="" id="apartments" checked disabled>
+                <input type="checkbox" name="apartments" id="apartments" checked disabled>
                 <label for="apartments">апартаменты</label>
               </li>
             </ul>
@@ -108,7 +108,7 @@
         </ul>
         <div class="arrow">
           <a class="arrow-up" href="#"></a>
-          <a class="arrow-down" href="#" active></a>
+          <a class="arrow-down" href="#"></a>
         </div>
       </div>
 
