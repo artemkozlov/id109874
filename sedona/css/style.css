@@ -13,8 +13,8 @@
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: 'symbols-sedona';
-    src: url('../font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
+    font-family: "symbols-sedona";
+    src: url("../font/symbols-sedona.svg?60737633#symbols-sedona") format("svg");
   }
 }
 */
@@ -69,6 +69,7 @@ body {
   line-height: 16px;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
+  background: #f2f2f2;
   padding: 0;
   margin: 0;
 }
@@ -76,6 +77,8 @@ body {
 .container {
   min-width: 768px;
   max-width: 1200px;
+  background: #fff;
+  box-shadow: 0 0 15px 7px rgba(0, 1, 1, .1);
   margin: 0 auto;
 }
 
@@ -370,9 +373,12 @@ body {
   margin-bottom: 50px;
 }
 
-/*===== Поиск гостиницы =====*/
+/*===== Блок поиска гостиницы =====*/
 
 .find {
+  position: relative;
+  z-index: 2;
+  background: #fff;
   text-align: center;
 }
 
@@ -400,14 +406,13 @@ body {
   padding: 30px 0;
 }
 
-/*===== Карта и поиск =====*/
+/*===== Карта и форма поиска =====*/
 
 .map {
   position: relative;
   background-image: url(../pic/map.jpg);
   width: 100%;
   height: 593px;
-  
 }
 
 .map .main-footer{
@@ -416,8 +421,9 @@ body {
   bottom: 0;
 }
 
-.form {
+.form-search {
   position: absolute;
+  display: none;
   left: 50%;
   top: 0;
   transform: translateX(-50%);
@@ -428,9 +434,74 @@ body {
   font-weight: bold;
   line-height: 16px;
   background-color: #fff;
+  box-shadow: 0 0 15px 7px rgba(0, 1, 1, .1);
+  box-sizing: border-box;
   padding: 55px;
   padding-bottom: 0;
-  box-sizing: border-box;
+}
+
+/* анимация появления */
+
+@-webkit-keyframes appearance {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-200px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-200px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.form-search-show {
+  display: block;
+  -webkit-animation: bounce .8s;
+  animation: appearance .8s;
+  z-index: 0;
+}
+
+/* анимация error */
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(-50%);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-50.5%);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(-49.5%);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    transform: translateX(-50%);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-50.5%);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(-49.5%);
+  }
+}
+
+.form-search-error {
+  -webkit-animation: shake 0.6s;
+  animation: shake 0.6s;
 }
 
 .form-row {
@@ -457,10 +528,6 @@ body {
   padding: 11px ;
   box-sizing: border-box;
   outline:none;
-}
-
-input[type="text"]::-webkit-input-placeholder {
-  color: #000;
 }
 
 .form-row input[type="text"]:hover {
@@ -505,7 +572,7 @@ input[type="text"]::-webkit-input-placeholder {
   background: #f2f2f2;
 }
 
-/*убрал стрелочки*/
+/*убрал стрелочки у number*/
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
  -webkit-appearance: none;
@@ -513,6 +580,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 input[type="number"] {
  -moz-appearance:textfield;
+  text-align: center;
 }
 
 .input-group input[type="number"],
@@ -547,6 +615,7 @@ input[type="number"] {
   background-color: #81b3d2;
   color: #fff;
   border: none;
+  outline: none;
   margin-top: 25px;
   padding: 18px 0;
 }
@@ -650,7 +719,7 @@ input[type="number"] {
 
 /*====== Страница отелей =====*/
 
-/* форма */
+/* фильтр */
 
 .hotel-filter {
   min-height: 217px;
@@ -676,9 +745,12 @@ input[type="number"] {
 
 input[type="checkbox"] + label:before {
   content: "\2610";
-  font-size: 28px;
+  display: inline-block;
+  width: 40px;
+  font-size: 26px;
+  font-family: "symbols-sedona";
+  font-weight: 100;
   vertical-align: middle;
-  margin-right: 18px;
   color: rgba(255, 255, 255, .6);
 }
 
@@ -710,6 +782,10 @@ input[type="checkbox"]:checked + label:before {
 .hotel-filter li {
   margin: 28px 0;
   vertical-align: middle;
+}
+
+.filter-col-left label {
+  cursor: pointer;
 }
 
 .filter-col-right {
@@ -811,6 +887,7 @@ input[type="checkbox"]:checked + label:before {
   background: transparent;
   border: 2px solid #fff;
   border-radius: 2px;
+  outline: none;
   margin: 0 auto;
 }
 
@@ -935,6 +1012,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .raiting {
+  width: 140px;
   float:right;
   text-align: right;
 }
@@ -953,7 +1031,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .raiting p {
-  box-sizing: border-box;
+  display: inline-block;
   margin: 0;
   width: 110px;
   font-size: 14px;
@@ -961,6 +1039,7 @@ input[type="checkbox"]:checked + label:before {
   padding: 3px 12px  5px 3px ;
   background: #f2f2f2;
   color: #666;
+  box-sizing: border-box;
 }
 
 
