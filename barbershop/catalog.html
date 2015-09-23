@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700,400&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700,400&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <div class="container clearfix">
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="#">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li>
               <a href="#">Информация</a>
@@ -22,7 +22,7 @@
               <a href="#">Новости</a>
             </li>
             <li>
-              <a href="#">Прайс-лист</a>
+              <a href="price.html">Прайс-лист</a>
             </li>
             <li class="active">
               <a href="#">Магазин</a>
@@ -39,20 +39,21 @@
     </header>
 
       <div class="container">
-
-        <h1>Средства для ухода</h1>
-           
-        <ul class="breadcrumbs">
-          <li>
-            <a href="#">Главная</a>
-          </li>
-          <li>
-            <a href="#">Магазин</a>
-          </li>
-          <li class="current-page">
-            Средства для ухода
-          </li>
-        </ul>
+       
+        <div class="inner-page-title">
+          <h1>Средства для ухода</h1>
+          <ul class="breadcrumbs">
+            <li>
+              <a href="index.html">Главная</a>
+            </li>
+            <li>
+              <a href="catalog.html">Магазин</a>
+            </li>
+            <li class="current">
+              Средства для ухода
+            </li>
+          </ul>
+        </div>
 
         <aside class="left-column">
           <form action="#">
@@ -79,7 +80,7 @@
                   <label for="5th-producer">Murray&#8217;s</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="6th-producer" name="American Crew" value="American Crew" checked>
+                  <input type="checkbox" id="6th-producer" name="American Crew" value="American Crew" checked disabled>
                   <label for="6th-producer">American Crew</label>
                 </li>
               </ul>
@@ -95,7 +96,7 @@
                   <label for="2nd-group-goods">Средства для ухода</label>
                 </li>
                 <li>
-                  <input type="radio" id="3rd-group-goods" name="check-group-goods" value="accessories">
+                  <input type="radio" id="3rd-group-goods" name="check-group-goods" value="accessories" disabled>
                   <label for="3rd-group-goods">Аксесуары</label>
                 </li>
               </ul>
@@ -106,10 +107,10 @@
 
         <section class="right-column">
           <article class="goods">
-            <a href="#">
+            <a href="catalog-item.html">
               <img src="img/photo-1-catalog.jpg" width="220" height="165" alt="Товар">
               <h1><span>Набор для путешествий</span><br>
-            &#171Baxter of california&#187</h1>
+            &#171;Baxter of california&#187;</h1>
             </a>
             <div class="item-buy">
               <span>2 900 руб.</span>
@@ -121,7 +122,7 @@
             <a href="#">  
               <img src="img/photo-2-catalog.jpg" width="220" height="165" alt="Товар">
               <h1><span>Увлажняющий кондиционер</span><br>
-              &#171Baxter of california&#187</h1>
+              &#171;Baxter of california&#187;</h1>
             </a>
             <div class="item-buy">
               <span>750 руб.</span>
@@ -133,7 +134,7 @@
             <a href="#">  
               <img src="img/photo-3-catalog.jpg" width="220" height="165" alt="Товар">
               <h1><span>Гель для волос</span><br>
-              &#171Suavecito&#187</h1>
+              &#171;Suavecito&#187;</h1>
             </a>
             <div class="item-buy">
               <span>290 руб.</span>
@@ -145,7 +146,7 @@
             <a href="#">
               <img src="img/photo-4-catalog.jpg" width="220" height="165" alt="Товар">
               <h1><span>Гель для укладки волос</span><br>
-              &#171American crew&#187</h1>
+              &#171;American crew&#187;</h1>
             </a>
             <div class="item-buy">
               <span>500 руб.</span>
@@ -157,7 +158,7 @@
             <a href="#">
               <img src="img/photo-5-catalog.jpg" width="220" height="165" alt="Товар">
               <h1><span>Гель для волос</span><br>
-              &#171American crew&#187</h1>
+              &#171;American crew&#187;</h1>
             </a>
             <div class="item-buy">
               <span>300 руб.</span>
@@ -169,7 +170,7 @@
             <a href="#">
               <img src="img/photo-6-catalog.jpg" width="220" height="165" alt="Товар">
               <h1><span>Набор для бритья</span><br>
-              &#171Baxter of california&#187</h1>
+              &#171;Baxter of california&#187;</h1>
             </a>
             <div class="item-buy">
               <span>3 900 руб.</span>
@@ -202,9 +203,29 @@
         </section>
         <section class="footer-copyright">
           <p>Разработано:</p>
-          <a href="#" class="btn">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/" class="btn">htmlacademy.ru</a>
         </section>
       </div>
     </footer>
+    
+    <div class="modal-content">
+      <button class="modal-content-close" title="Закрыть">Закрыть</button>
+    
+      <h2 class="modal-content-title">Личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль.</p>
+
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <input type="text" class="icon-user" name="login">
+        <input type="password" class="icon-password" name="password">
+
+        <input type="checkbox" name="remember" id="remember-me">
+        <label for="remember-me">Запомните меня</label>
+
+        <a href="#" class="restore">Я забыл пароль!</a>
+        <button type="submit" class="btn">Войти</button>
+      </form>
+    </div>
+    
+    <script src="js/login-form.min.js"></script>
   </body>
 </html>

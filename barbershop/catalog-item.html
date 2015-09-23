@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>Страница товара</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700,400&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700,400&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <div class="container clearfix">
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="#">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li>
               <a href="#">Информация</a>
@@ -22,10 +22,10 @@
               <a href="#">Новости</a>
             </li>
             <li>
-              <a href="#">Прайс-лист</a>
+              <a href="price.html">Прайс-лист</a>
             </li>
             <li class="active">
-              <a href="#">Магазин</a>
+              <a href="catalog.html">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -39,23 +39,24 @@
     </header>
 
       <div class="container">
-          
-        <h1>Набор для путешествий &#171Baxter of california&#187</h1>
         
-        <ul class="breadcrumbs">
-          <li>
-            <a href="#">Главная</a>
-          </li>
-          <li>
-            <a href="#">Магазин</a>
-          </li>
-          <li>
-            <a href="#">Средства для ухода</a>
-          </li>
-          <li class="current-page">
-            Набор для путешествий &#171Baxter of california&#187
-          </li>
-        </ul>
+        <div class="inner-page-title">  
+          <h1>Набор для путешествий &#171;Baxter of california&#187;</h1>
+          <ul class="breadcrumbs">
+            <li>
+              <a href="index.html">Главная</a>
+            </li>
+            <li>
+              <a href="catalog.html">Магазин</a>
+            </li>
+            <li>
+              <a href="catalog.html">Средства для ухода</a>
+            </li>
+            <li class="current">
+              Набор для путешествий &#171;Baxter of california&#187;
+            </li>
+          </ul>
+        </div>
 
         <section class="item clearfix">
           <div class="item-pictures">
@@ -64,9 +65,9 @@
               </a>
             </figure>
             <div class="small-images">
-              <a href="#"><img class="add-photo" src="img/photo-1-catalog-item.jpg" width="150" height="150" alt="Фото"></a>
-              <a href="#"><img class="add-photo" src="img/photo-2-catalog-item.jpg" width="150" height="150" alt="Фото"></a>
-              <a href="#"><img class="add-photo" src="img/photo-3-catalog-item.jpg" width="150" height="150" alt="Фото"></a>
+              <a href="#"><img class="add-photo" src="img/photo-1-catalog-item.jpg" width="140" height="149" alt="Фото"></a>
+              <a href="#"><img class="add-photo" src="img/photo-2-catalog-item.jpg" width="140" height="149" alt="Фото"></a>
+              <a href="#"><img class="add-photo" src="img/photo-3-catalog-item.jpg" width="140" height="149" alt="Фото"></a>
             </div>
           </div>
           
@@ -109,9 +110,29 @@
         </section>
         <section class="footer-copyright">
           <p>Дизайн сайта:</p>
-          <a href="#" class="btn">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/" class="btn">htmlacademy.ru</a>
         </section>
       </div>
     </footer>
+    
+    <div class="modal-content">
+      <button class="modal-content-close" title="Закрыть">Закрыть</button>
+    
+      <h2 class="modal-content-title">Личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль.</p>
+
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <input type="text" class="icon-user" name="login">
+        <input type="password" class="icon-password" name="password">
+
+        <input type="checkbox" name="remember" id="remember-me">
+        <label for="remember-me">Запомните меня</label>
+
+        <a href="#" class="restore">Я забыл пароль!</a>
+        <button type="submit" class="btn">Войти</button>
+      </form>
+    </div>
+    
+    <script src="js/login-form.min.js"></script>
   </body>
 </html>
