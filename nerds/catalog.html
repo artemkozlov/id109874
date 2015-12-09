@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Catalog</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   
   <body>
@@ -28,7 +28,7 @@
               <a href="#">Контакты</a>
             </li>
              <li>
-              <a href="#">Корзина</a>
+              <a class="icon-basket" href="#">Корзина</a>
             </li>
           </ul>
         </nav>
@@ -47,7 +47,7 @@
           <div class="range-filter">
             <div class="range-controls">
               <div class="scale">
-                <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                <div class="bar" style="margin-left: 10%; width: 60%"></div>
               </div>
               <div class="toggle toggle-min"></div>
               <div class="toggle toggle-max"></div>
@@ -61,7 +61,7 @@
           <h2>Сетка:</h2>
           <ul>
             <li>
-              <input type="radio" id="adaptive" name="check-grid" value="adaptive">
+              <input type="radio" id="adaptive" name="check-grid" value="adaptive" checked>
               <label for="adaptive">Адаптивная</label>
             </li>
             <li>
@@ -77,15 +77,15 @@
           <h2>Особенности:</h2>
           <ul>
             <li>
-              <input type="checkbox" id="1st-feature" name="slider" value="slider">
+              <input type="checkbox" id="1st-feature" name="slider" value="slider" checked>
               <label for="1st-feature">Слайдер</label>
             </li>
             <li>
-              <input type="checkbox" id="2nd-feature" name="advantages" value="advantages">
-              <label for="2nd-feature">Блок преимуществ</label>
+              <input type="checkbox" id="2nd-feature" name="advantages" value="advantages" disabled>
+              <label class="label-disabled" for="2nd-feature">Блок преимуществ</label>
             </li>
             <li>
-              <input type="checkbox" id="3rd-feature" name="news" value="news">
+              <input type="checkbox" id="3rd-feature" name="news" value="news" checked>
               <label for="3rd-feature">Новости</label>
             </li>
             <li>
@@ -98,14 +98,119 @@
             </li>
           </ul>
           
-          <button class="btn btn-show" type="submit" name="show">Показать</button>
+          <button class="btn-form-show" type="submit" name="show">Показать</button>
 
         </form>
         
       </section>
       
       <section class="right-column">
+       
+        <div class="sort">
+          <span class="sort-title">Сортировать:</span>
+          <ul>
+            <li>
+              <a class="sort-state" href="#">по цене</a>
+            </li>
+            <li>
+              <a class="sort-state" href="#">по типу</a>
+            </li>
+            <li>
+              <a class="sort-state" href="#">по функционалу</a>
+            </li>
+          </ul>
+          
+          <div class="arrows">
+            <a class="arrow-down" href="#" ></a>
+            <a class="arrow-up" href="#"></a>
+          </div>
+        </div>
         
+        
+        <div class="catalog-list">
+         
+          <article class="catalog-item">
+            <div class="item-wrapper">
+              <i class="item-wrapper-decor"></i>
+              <img src="img/catalog_img-1.jpg" alt="example">
+            </div>
+            <div class="item-note">
+              <a href="#" class="item-note-title">Aviator</a>
+              <p>Одностраничный макет с авторским дизайном</p>
+              <a href="#" class="btn-price">8000 р.</a>
+            </div>
+          </article>
+          
+          <article class="catalog-item">
+            <div class="item-wrapper">
+              <i class="item-wrapper-decor"></i>
+              <img src="img/catalog_img-2.jpg" alt="example">
+            </div>
+            <div class="item-note">
+              <a href="#" class="item-note-title">Sunset</a>
+              <p>Одностраничный макет с авторским дизайном</p>
+              <a href="#" class="btn-price">10000 р.</a>
+            </div>
+          </article>
+          
+          <article class="catalog-item">
+            <div class="item-wrapper">
+              <i class="item-wrapper-decor"></i>
+              <img src="img/catalog_img-3.jpg" alt="example">
+            </div>
+            <div class="item-note">
+              <a href="#" class="item-note-title">Forte</a>
+              <p>Одностраничный макет с авторским дизайном</p>
+              <a href="#" class="btn-price">9000 р.</a>
+            </div>
+          </article>
+          
+          <article class="catalog-item">
+            <div class="item-wrapper">
+              <i class="item-wrapper-decor"></i>
+              <img src="img/catalog_img-4.jpg" alt="example">
+            </div>
+            <div class="item-note">
+              <a href="#" class="item-note-title">Thai</a>
+              <p>Одностраничный макет с авторским дизайном</p>
+              <a href="#" class="btn-price">7000 р.</a>
+            </div>
+          </article>
+          
+          <article class="catalog-item">
+            <div class="item-wrapper">
+              <i class="item-wrapper-decor"></i>
+              <img src="img/catalog_img-5.jpg" alt="example">
+            </div>
+            <div class="item-note">
+              <a href="#" class="item-note-title">Avenue</a>
+              <p>Одностраничный макет с авторским дизайном</p>
+              <a href="#" class="btn-price">8500 р.</a>
+            </div>
+          </article>
+          
+          <article class="catalog-item">
+            <div class="item-wrapper">
+              <i class="item-wrapper-decor"></i>
+              <img src="img/catalog_img-6.jpg" alt="example">
+            </div>
+            <div class="item-note">
+              <a href="#" class="item-note-title">Dovetail</a>
+              <p>Одностраничный макет с авторским дизайном</p>
+              <a href="#" class="btn-price">12000 р.</a>
+            </div>
+          </article>
+        </div>
+        
+        <div class="pagination">
+          <ul>
+            <li><a class="page-active" href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">Следующая</a></li>
+          </ul>
+        </div>
+      
       </section>
     </div>
     
