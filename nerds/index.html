@@ -141,7 +141,31 @@
             <p>тел. +7 (812) 275-75-75</p>
             <a href="#" class="btn">Напишите нам</a>
           </div>
-          <div class="contacts-form"></div>
+          
+          <div class="form-feedback">
+            <div class="btn-form-close"></div>
+            <form action="form.php" method="get">
+              <div class="form-row clearfix">
+                <div class="form-col-left">
+                  <label for="your-name"><p>Ваше имя:</p></label>
+                  <input type="text" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста" required autofocus>
+                </div>
+                
+                <div class="form-col-right">
+                  <label for="your-email"><p>Ваш e-mail:</p></label>
+                  <input type="email" name="your-email" id="your-email" placeholder="Для отправки ответа" required>
+                </div>
+              </div>
+              <label for="your-letter"><p>Текст письма:</p></label>
+              <textarea name="your-letter" cols="25" rows="3" id="your-letter" placeholder="В свободной форме"></textarea>
+              
+              <div class="form-row clearfix">
+                <button type="submit" name="submit" class="btn-send">Отправить</button>
+                <button type="reset" name="reset" class="btn-reset">Отмена</button>
+              </div>
+            </form>
+          </div>
+          
         </section>
         <section class="social clearfix">
           <div class="social-btns">

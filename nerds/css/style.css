@@ -1354,3 +1354,139 @@ input[type="checkbox"]:disabled + label:before{
   background-color: #fff;
   cursor: default;
 }
+
+
+/*===== feedback form =====*/
+
+.form-feedback {
+  display: none;
+  position: absolute;
+  left: 100px;
+  top: -30px;
+  width: 630px;
+  height: 415px;
+  background-color: #fff;
+  box-shadow: 0 5px 25px 0 rgba(0, 1, 1, 0.75);
+}
+.form-feedback form {
+  padding: 30px 80px;
+}
+.form-col-left {
+  float: left;
+  width: 220px;
+}
+.form-col-right {
+  float: right;
+  width: 220px;
+}
+.form-feedback p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 18px;
+}
+.form-feedback input[type="text"], .form-feedback input[type="email"],
+.form-feedback textarea {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 2px solid #d7dcde;
+  border-radius: 5px;
+  outline: none;
+}
+.form-feedback textarea {
+  margin-bottom: 50px;
+  height: 115px;
+  resize: none;
+}
+.form-feedback input[type="text"]:hover, .form-feedback input[type="email"]:hover,
+.form-feedback textarea:hover {
+  border: 2px solid #a2a9ac;
+}
+.form-feedback input[type="text"]:focus, .form-feedback input[type="email"]:focus,
+.form-feedback textarea:focus {
+  border: 2px solid #56bffb;
+}
+.btn-send {
+  float: left;
+  background-color: #fb565a;
+  color: #fff;
+}
+.btn-send:hover {
+  background-color: #d6494d;
+}
+.btn-send:active {
+  background-color: #b63538;
+}
+.btn-reset {
+  float: right;
+  background-color: #f1f1f1;
+}
+.btn-reset:hover {
+  background-color: #e5e5e5;
+}
+.btn-reset:active {
+  background-color: #d5d5d5;
+}
+.btn-send, .btn-reset {
+  padding: 10px;
+  width: 220px;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.btn-form-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 40px;
+  height: 40px;
+  background-color: #fb565a;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn-form-close:before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 5px;
+  transform: rotate(50deg);
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+}
+.btn-form-close:after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 5px;
+  transform: rotate(-50deg);
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+}
+.btn-form-close:hover {
+  background-color: #fff;
+}
+.btn-form-close:hover:before, .btn-form-close:hover:after {
+  background-color: #fb565a;
+}
+
+.form-feedback {
+  display: block;
+}
+
+
+
+
+
+
+
