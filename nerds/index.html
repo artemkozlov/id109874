@@ -130,44 +130,45 @@
     </div>
     
     <footer class="main-footer">
-      <div class="map"></div>
+      
       
       <div class="container">
-       
-        <section class="contacts clearfix">
+        <div class="map">
+
           <div class="contacts-card">
             <h3>NЁRDS DESIGN STUDIO</h3>
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
-            <a href="#" class="btn">Напишите нам</a>
+            <a href="#" class="btn btn-show-feedback">Напишите нам</a>
           </div>
-          
+
           <div class="form-feedback">
             <div class="btn-form-close"></div>
             <form action="form.php" method="get">
               <div class="form-row clearfix">
                 <div class="form-col-left">
-                  <label for="your-name"><p>Ваше имя:</p></label>
+                  <label for="your-name"><span>Ваше имя:</span></label>
                   <input type="text" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста" required autofocus>
                 </div>
-                
+
                 <div class="form-col-right">
-                  <label for="your-email"><p>Ваш e-mail:</p></label>
+                  <label for="your-email"><span>Ваш e-mail:</span></label>
                   <input type="email" name="your-email" id="your-email" placeholder="Для отправки ответа" required>
                 </div>
               </div>
-              <label for="your-letter"><p>Текст письма:</p></label>
+
+              <label for="your-letter"><span>Текст письма:</span></label>
               <textarea name="your-letter" cols="25" rows="3" id="your-letter" placeholder="В свободной форме"></textarea>
-              
+
               <div class="form-row clearfix">
                 <button type="submit" name="submit" class="btn-send">Отправить</button>
                 <button type="reset" name="reset" class="btn-reset">Отмена</button>
               </div>
             </form>
           </div>
-          
-        </section>
-        <section class="social clearfix">
+        </div>
+            
+        <div class="social clearfix">
           <div class="social-btns">
             <a href="#" class="social-link"><i class="icon-vk"></i></a>
             <a href="#" class="social-link"><i class="icon-facebook"></i></a>
@@ -177,10 +178,11 @@
             <span>Давайте дружить, это выгодно! </span>
             <p>Скидка 10% для друзей из социальных сетей.</p>
           </div>
-        </section>
+        </div>
       </div>
     </footer>
     
+    <script src="js/user.min.js"></script>
 
   </body>
 </html>
