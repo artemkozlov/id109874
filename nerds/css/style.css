@@ -855,9 +855,9 @@ body {
 
 .map {
   position: relative;
-  left: -150px;
+  left: -10px;
   margin: 0 auto;
-  width: 1200px;
+  width: 900px;
   height: 416px;
   background: #e9e5dc;
   background-image: url(../css/pic/map.jpg);
@@ -1358,7 +1358,7 @@ input[type="checkbox"]:disabled + label:before{
 .form-feedback {
   display: none;
   position: absolute;
-  left: 250px;
+  left: 150px;
   top: -30px;
   z-index: 20;
   width: 630px;
